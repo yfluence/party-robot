@@ -1,8 +1,9 @@
 # Party Robot
 
-Welcome to Party Robot on Exercism's Go Track.
-If you need help running the tests or submitting your code, check out `HELP.md`.
-If you get stuck on the exercise, check out `HINTS.md`, but try and solve it without using those first :)
+This is a small bit of code to show you how testing
+works in Go. The principles apply to other languages.
+I stole this from the [Exercism](https://www.exercism.io)
+Go track.
 
 ## Running the tests
 
@@ -16,6 +17,16 @@ go test -v ./...
 ```
 
 You should see a bunch of failing tests! Let's make them pass.
+
+## Seeing the tests run on GitHub
+
+If you push your code to GitHub, you can see the tests run in the Actions tab.
+And, you can even make a little icon to display the status of the tests in your
+README. Here's one:
+
+![Go](https://github.com/yale-mgt-656-fall-2024/party-robot/actions/workflows/test.yml/badge.svg)
+
+Your goal is to make that badge green!
 
 ## Packages
 
