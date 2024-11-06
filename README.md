@@ -4,7 +4,18 @@ Welcome to Party Robot on Exercism's Go Track.
 If you need help running the tests or submitting your code, check out `HELP.md`.
 If you get stuck on the exercise, check out `HINTS.md`, but try and solve it without using those first :)
 
-## Introduction
+## Running the tests
+
+This repo has code in `party_robot.go` that I expect you to complete.
+You can see the tests in `party_robot_test.go`. To run the tests, you'll
+want to open up a Codespace or similar. Then you can run the following
+shell command:
+
+```bash
+go test -v ./...
+```
+
+You should see a bunch of failing tests! Let's make them pass.
 
 ## Packages
 
@@ -135,11 +146,5 @@ AssignTable("Christiane", 27, "Frank", "on the left", 23.7834298)
 
 ## Source
 
-### Created by
-
-- @tehsphinx
-
-### Contributed to by
-
-- @oanaOM
-- @bobtfish
+This comes from [Exercism.io](https://exercism.io), which is an
+excellent place to learn new programming languages.
