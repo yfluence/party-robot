@@ -101,12 +101,10 @@ func TestAssignTable(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.description, func(t *testing.T) {
 			if got := AssignTable(tt.name, tt.tableNumber, tt.seatmate, tt.direction, tt.distance); got != tt.want {
-				t.Errorf(`AssignTable(%s,%d,%s,%s,%f)
-got:
-%q
-want:
-%q`,
-					tt.name, tt.tableNumber, tt.seatmate, tt.direction, tt.distance, got, tt.want)
+				t.Errorf(
+					"AssignTable(%s,%d,%s,%s,%f)\ngot:\n%q\nwant:\n%q",
+					tt.name, tt.tableNumber, tt.seatmate, tt.direction, tt.distance, got, tt.want,
+				)
 
 				wantLen := len(tt.want)
 				gotLen := len(got)
